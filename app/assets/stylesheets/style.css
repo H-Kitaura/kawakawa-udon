@@ -173,3 +173,16 @@ width: 100%;
 /* .food_image */
 
 /* .food_manage */
+
+
+
+
+/* /タブの通常状態 */
+.tab {
+  color: #111;
+}
+
+/* //コンテンツの通常状態 */
+.tabpanel {
+  display: none;
+}

@@ -2,10 +2,24 @@
 <% if user_signed_in? && current_user.id %>
   <%= link_to "メニュー投稿",new_menu_path %>
 <% end %>
-<div class="basic-card"> 
-  <%  @food1.each do |food| %>
-      <ul class = "card_lists">
-          <h1>基本メニュー</h1>
+
+<div class="tabs">
+  <div role="tablist" aria-label="Sample Tabs">
+    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+          基本メニュー
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+          期間限定メニュー
+        </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+          サイドメニュー
+        </button>
+  </div>
+  <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+    <div class="basic-card"> 
+    <h1>基本メニュー</h1>
+      <%  @food1.each do |food| %>
+       <ul class = "card_lists">
           <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
             <div> 商品名</div>
             <%= food.title%></p>
@@ -15,12 +29,18 @@
             <%= food.concept%></p>
             <%= link_to "削除", menu_path(food.id), method: :delete %>
           </li>
-      </ul>
-  <% end %>
+       </ul>
+      <% end %>
+    </div>
+    <%= paginate @food1 %>
+  </div>
 
-  <%  @food2.each do |food| %>
+  
+  <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+     <div class="basic-card"> 
+      <h1>期間限定メニュー</h1>
+       <%  @food2.each do |food| %>
         <ul class = "card_lists">
-            <h1>期間限定メニュー</h1>
             <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
               <div> 商品名</div>
               <%= food.title%></p>
@@ -31,11 +51,16 @@
               <%= link_to "削除", menu_path(food.id), method: :delete %>
             </li>
         </ul>
-    <% end %>
+       <% end %>
+     </div>
+    <%= paginate @food1 %>
+  </div>
 
-    <%  @food3.each do |food| %>
+  <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+    <div class="basic-card"> 
+    <h1>サイドメニュー</h1>
+      <%  @food3.each do |food| %>
       <ul class = "card_lists">
-          <h1>サイドメニュー</h1>
           <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
             <div> 商品名</div>
             <%= food.title%></p>
@@ -46,5 +71,8 @@
             <%= link_to "削除", menu_path(food.id), method: :delete %>
           </li>
       </ul>
-  <% end %>
-<%= paginate @foods %>
+      <% end %>
+   </div>
+    <%= paginate @food1 %>
+  </div>
+</div>
