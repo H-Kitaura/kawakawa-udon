@@ -1,0 +1,12 @@
+詳細ページ
+
+ <p class="foods__hedding">
+        <%= @food.title %>
+      </p>
+      <div class="food__image">
+    <%= link_to image_tag(@food.image, class: :card__img ),menu_path(@food.id) %>
+      <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
+        <div class="food__manage">
+          <%= link_to "編集する", edit_menu_path(@food.id), class: :food__btn %>
+          <%= link_to "削除する", menu_path(@food.id), method: :delete, class: :food__btn %>
+        </div>

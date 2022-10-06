@@ -1,0 +1,50 @@
+<h3>メニュー一覧</h3>
+<% if user_signed_in? && current_user.id %>
+  <%= link_to "メニュー投稿",new_menu_path %>
+<% end %>
+<div class="basic-card"> 
+  <%  @food1.each do |food| %>
+      <ul class = "card_lists">
+          <h1>基本メニュー</h1>
+          <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
+            <div> 商品名</div>
+            <%= food.title%></p>
+            <div> 値段</div>
+            <%= food.money%></p>
+            <div> 商品紹介</div>
+            <%= food.concept%></p>
+            <%= link_to "削除", menu_path(food.id), method: :delete %>
+          </li>
+      </ul>
+  <% end %>
+
+  <%  @food2.each do |food| %>
+        <ul class = "card_lists">
+            <h1>期間限定メニュー</h1>
+            <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
+              <div> 商品名</div>
+              <%= food.title%></p>
+              <div> 値段</div>
+              <%= food.money%></p>
+              <div> 商品紹介</div>
+              <%= food.concept%></p>
+              <%= link_to "削除", menu_path(food.id), method: :delete %>
+            </li>
+        </ul>
+    <% end %>
+
+    <%  @food3.each do |food| %>
+      <ul class = "card_lists">
+          <h1>サイドメニュー</h1>
+          <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
+            <div> 商品名</div>
+            <%= food.title%></p>
+            <div> 値段</div>
+            <%= food.money%></p>
+            <div> 商品紹介</div>
+            <%= food.concept%></p>
+            <%= link_to "削除", menu_path(food.id), method: :delete %>
+          </li>
+      </ul>
+  <% end %>
+<%= paginate @foods %>
