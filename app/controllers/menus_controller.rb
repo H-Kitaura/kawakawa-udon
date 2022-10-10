@@ -1,13 +1,11 @@
 class MenusController < ApplicationController
   def index
-    @foods = Food.all
-    @foods = @foods.page(params[:page]).per(2)
     @food1 = Food.where(genre_id: 2)
-    @food1 = @foods.page(params[:page]).per(2)
+    @food1 = @food1.page(params[:page]).per(2)
     @food2 = Food.where(genre_id: 3)
-    @food2 = @foods.page(params[:page]).per(2)
+    @food2 = @food2.page(params[:page]).per(2)
     @food3 = Food.where(genre_id: 4)
-    @food3 = @foods.page(params[:page]).per(2)
+    @food3 = @food3.page(params[:page]).per(2)
   end
 
   def new

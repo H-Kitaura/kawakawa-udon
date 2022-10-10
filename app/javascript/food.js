@@ -39,6 +39,9 @@ function changeTabs(e) {
   const target = e.target;
   const parent = target.parentNode;
   const grandparent = parent.parentNode;
+  console.log(target)
+  // console.log(parent)
+  console.log(parent)
 
   // タブから現在すべての選択状態を取り除きます
   parent
