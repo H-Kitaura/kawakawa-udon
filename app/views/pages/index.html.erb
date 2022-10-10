@@ -3,6 +3,7 @@
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>  
   <% else %>
     <%= link_to "ログイン", user_session_path %>  
+    <%= link_to "カワちゃんここで適当に登録するんやで！", new_user_registration_path %>  
   <% end %>
   <%= image_tag 'kawakawa-gaikan.jpeg', class:"bg-image" %>
   <div class="navbar">
