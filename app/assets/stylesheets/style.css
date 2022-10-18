@@ -44,7 +44,19 @@ header {
 .title{
   display: flex;
   justify-content: center;  
-  background-color: #efd7d7;
+  /* background-color: white; */
+}
+
+.header-box {
+	display: flex;
+  justify-content: end;
+  margin: 10px;  
+}	
+
+.contact-button {
+	padding: 1rem;
+	border: 2px solid black;
+  background-color: white;
 }
 
 /* フッター */
@@ -63,8 +75,8 @@ footer {
 
 #pagetop a {
   display: block;
-  background-color: var(--base-color);
-  color: var(--white-color);
+  background-color: black;
+  color: white;
   width: 50px;
   padding: 10px 5px;
   text-align: center;
@@ -98,14 +110,18 @@ footer {
 
 
 .upper-content{
- display: block;
- margin: auto;
+ display: flex;
+  justify-content: center;
 }
 
-/* .heading-name{} */
+.heading-name{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
 .instagram-media{
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -126,25 +142,28 @@ footer {
 
 /* summary内 */
 .summary{
-  text-align: center;
-  padding: 100px;
-
+  text-align: left;
+  padding: 0px 300px 30px 300px;
 }
 
 
 
 /* アクセス内 */
-.map{
-  display: flex;
-  justify-content: center;
-}
+/* .map{
+  display: block;
+  padding: 50px;
+} */
 
 .access-image{
 height: 70vh;
 width: 100%;
 }
 
-
+.access-message{
+ display: block;
+ float: right;
+ width: 500px;
+}
 
 /* attention内 */
 .attention-message{
@@ -160,14 +179,16 @@ width: 100%;
   padding: 100px;
 }
 
+
 /* menu内 */
 
 /* index内 */
 
 .basic-card{
-  display: block;
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
 
+  /* margin: auto; */
 }
 
 .card__img{
@@ -176,8 +197,9 @@ width: 100%;
 }
 
 .limit-card{
-  display: block;
+  display: flex;
   margin: auto;
+
 }
 
 /* new内 */
