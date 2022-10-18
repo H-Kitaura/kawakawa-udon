@@ -73,8 +73,9 @@
       </ul>
       <% end %>
    </div>
-   <% if @food3.blank? %>  if prams[:page] != 1 
-     <%= link_to menus_path %>
+   <% if @food3.blank? %>  
+   <%# if prams[:page] != 1  %>
+     <%= link_to "戻る", menus_path %>
    <% else%>  
     <%= paginate @food3 %>
     <% end %>

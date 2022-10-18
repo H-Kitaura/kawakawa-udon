@@ -8,31 +8,31 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // タブリストのタブ間の矢印ナビゲーションを有効にします
-  let tabFocus = 0;
+  // let tabFocus = 0;
 
-  tabList.addEventListener("keydown", e => {
-    // 右に移動
-    if (e.keyCode === 39 || e.keyCode === 37) {
-      tabs[tabFocus].setAttribute("tabindex", -1);
-      if (e.keyCode === 39) {
-        tabFocus++;
-        // 最後にいる場合は、最初に移動します
-        if (tabFocus >= tabs.length) {
-          tabFocus = 0;
-        }
-        // 左に移動
-      } else if (e.keyCode === 37) {
-        tabFocus--;
-        // 最初にいる場合は、最後に移動します
-        if (tabFocus < 0) {
-          tabFocus = tabs.length - 1;
-        }
-      }
+  // tabList.addEventListener("keydown", e => {
+  //   // 右に移動
+  //   if (e.keyCode === 39 || e.keyCode === 37) {
+  //     tabs[tabFocus].setAttribute("tabindex", -1);
+  //     if (e.keyCode === 39) {
+  //       tabFocus++;
+  //       // 最後にいる場合は、最初に移動します
+  //       if (tabFocus >= tabs.length) {
+  //         tabFocus = 0;
+  //       }
+  //       // 左に移動
+  //     } else if (e.keyCode === 37) {
+  //       tabFocus--;
+  //       // 最初にいる場合は、最後に移動します
+  //       if (tabFocus < 0) {
+  //         tabFocus = tabs.length - 1;
+  //       }
+  //     }
 
-      tabs[tabFocus].setAttribute("tabindex", 0);
-      tabs[tabFocus].focus();
-    }
-  });
+  //     tabs[tabFocus].setAttribute("tabindex", 0);
+  //     tabs[tabFocus].focus();
+  //   }
+  // });
 });
 
 function changeTabs(e) {
