@@ -16,8 +16,8 @@
         </button>
   </div>
   <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-    <div class="basic-card"> 
     <h1>基本メニュー</h1>
+      <div class="basic-card"> 
       <%  @food1.each do |food| %>
        <ul class = "card_lists">
           <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
@@ -37,8 +37,8 @@
 
   
   <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+    <h1>期間限定メニュー</h1>
      <div class="basic-card"> 
-      <h1>期間限定メニュー</h1>
        <%  @food2.each do |food| %>
         <ul class = "card_lists">
             <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
@@ -57,8 +57,8 @@
   </div>
 
   <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
-    <div class="basic-card"> 
     <h1>サイドメニュー</h1>
+    <div class="basic-card"> 
       <%  @food3.each do |food| %>
       <ul class = "card_lists">
           <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
