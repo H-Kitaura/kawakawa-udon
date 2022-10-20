@@ -21,7 +21,25 @@
     </h1>
   </head>
 
-  <body>
+ <body>
+    <header>
+        <div class="navbar"id="nav">menu↓
+          <ul class="nav-lists" id="pull-down" style="display:none;">
+            <h3><li><%= link_to "川川うどんについて", "#1"%></li>
+            <li><%= link_to "当店ご来店の始めてのお客様へ",attention_path %></li>
+            <li><%= link_to "メニュー",menus_path %></li>
+            <li><%= link_to "お店のご案内", "#2"%></li></h3>
+          </ul>
+        </div>
+        <div class="open">
+      <h3>営業時間
+      <p></p>
+      11:00～14:00 (麵がなくなり次第終了)
+      <p></p>
+      ※休みは火曜日、水曜日</h3>
+    </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>
