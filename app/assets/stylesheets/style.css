@@ -4,6 +4,7 @@
 
  .li,ul{
   list-style: none;
+  padding: 10px 20px;
  }
 
 /* ヘッダー */
@@ -13,24 +14,27 @@
   /* background-color: white; */
 }
 
-.navbar {
-  padding: 20px;
-  height: 70px;
+/* .navbar {
+  height: 10%;
   width: 10%;
   border: solid 2px; 
   background-color: aliceblue;
-  left: 30px;
+  margin-left: 40px;
   text-align: center;
+
+} */
+
+.nav-title{
+  background-color: aliceblue;
+  margin-left: 40px;
+  height: 10%;
+  width: 10%;
+
 }
 
-
 .nav-lists {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  height: 100px;
   width: 200px;
   position: absolute;
-  top: 70px;
 }
 
 .contact-button {
@@ -57,8 +61,8 @@
 .main{
   display: block;
   margin: 0 auto;
-
 }
+
 .bg-image {
   border:  solid 1px;                             /* 枠線指定 */
   display:  block;                         
@@ -126,6 +130,8 @@
 
 .summary{
   text-align: center;
+  display: block;
+  margin: 0 auto;
   padding: 0px 150px 30px 150px;
 }
 
@@ -144,13 +150,17 @@
 }
 
 .access{
-  display: block;
-  margin: 0 auto;
-
+  /* display: block;
+  margin: 0 auto; */
+  text-align: center;
 }
 
+
 .access-message{
-  display: flex;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
 }
 
 .access-image{
@@ -164,6 +174,11 @@
 .access-message{
  /* float: right; */
  width: 40%;
+}
+
+.access-layout{
+  display: block;
+  justify-content: center;
 }
 
 .google-map{
@@ -257,6 +272,8 @@
 
 
 /* フッター */
+
+
 footer {
   height: 50px;
   background-color: #f0f0f0;
