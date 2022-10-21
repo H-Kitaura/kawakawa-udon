@@ -4,13 +4,13 @@
 
  .li,ul{
   list-style: none;
-  padding: 10px 20px;
  }
 
 /* ヘッダー */
 .title{
   display: flex;
-  justify-content: center;  
+  justify-content: center; 
+  color: #333;
   /* background-color: white; */
 }
 
@@ -24,10 +24,41 @@
 
 } */
 
+
+ #pull-down ul{ 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+  }
+ #pulldown li{ 
+  display: inline; 
+  padding: 0; 
+  margin: 0; 
+  }
+  #pull-down li a{
+  display: block; 
+  border: 1px solid #9F99A3;
+  padding: 3px 10px;
+  text-decoration: none;
+  width: 500px;
+  color: #333;
+  margin: 2px 0px;
+  text-align: left;
+  font-size: 30px;
+
+  }
+  #pull-down li a:hover{
+  border: 1px solid #8593A9;
+  background-color: #9EB7DD;
+  }
+  
+
+
+
+
 .nav-title{
   background-color: aliceblue;
   margin-left: 40px;
-  height: 10%;
   width: 10%;
 
 }
@@ -38,9 +69,11 @@
 }
 
 .contact-button {
-	padding: 1rem;
+	padding: 3rem;
 	border: 2px solid black;
-  background-color: white;
+  background-color: aliceblue;
+  color: #333;
+  margin-right: 350px;
 }
 
 .open{
@@ -58,18 +91,16 @@
 
 /* } */
 
-.main{
+/* .top{
   display: block;
   margin: 0 auto;
-}
+} */
 
 .bg-image {
-  border:  solid 1px;                             /* 枠線指定 */
   display:  block;                         
   background-color: rgba(209, 209, 209, 0.7);     /* 背景色指定 */
   padding:  10px;        /* 余白指定 */
   border: solid 2px;      /* 枠線指定 */
-  height: 70vh;
   width: 100vh;
   margin: 0 auto;
 }
@@ -95,13 +126,12 @@
 /* .first-view{} */
 
 
-.upper-content{
+/* .upper-content{
   display: block;
   margin: 0 auto;
-}
+} */
 
 .heading-name{
-  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -109,6 +139,7 @@
 .instagram-center {
 	margin:0 auto;
 	max-width: 350px;
+  
 }
 
 .instagram-media{
@@ -130,9 +161,7 @@
 
 .summary{
   text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding: 0px 150px 30px 150px;
+  padding: 30px 250px 30px 250px;
 }
 
 
@@ -144,22 +173,18 @@
 } */
 
 .access-title{
-  display: block;
-  margin: 0 auto;
   text-align: center;
 }
 
 .access{
-  /* display: block;
+  /* display: 
   margin: 0 auto; */
-  text-align: center;
 }
 
 
 .access-message{
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+  border: solid 2px;      /* 枠線指定 */
+  width: 40%;
 
 }
 
@@ -167,22 +192,16 @@
   display: block;
   margin: 0 auto;
   height: 50vh;
-  /* width: 100%; */
-  max-width: 100%;
-}
-
-.access-message{
- /* float: right; */
- width: 40%;
+  padding: 20px;
 }
 
 .access-layout{
-  display: block;
+  display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .google-map{
-  display: block;
   margin: 0 auto;
 	max-width: 350px;
 }
@@ -206,6 +225,13 @@
 /* menu内 */
 
 /* index内 */
+
+.tablist{
+  padding: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .basic-card{
   display: flex;
