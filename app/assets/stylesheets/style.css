@@ -1,43 +1,36 @@
-/* リセットCSS */
-body {
-  font-size: 14px;
-  color: #333;
-  margin: 0 auto;
-  background-color: white;
-}
-h1,h2,h3,h4,h5,h6,p {
-  padding: 10px 0;
-  margin: 0;
-}
-
-ul,li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border-bottom: 1px solid #CCC;
-  height: 100px;
-  width: 170px;
-  background-color: white;
-}
-
 .hidden{
   display: none;
  }
 
+ .li,ul{
+  list-style: none;
+ }
 
 /* ヘッダー */
-
-/* header {
-  height: 50px;
-  background-color: white;
-  padding: 10px 0;
-  display: flex;
-} */
-
 .title{
   display: flex;
   justify-content: center;  
   /* background-color: white; */
+}
+
+.navbar {
+  padding: 20px;
+  height: 70px;
+  width: 10%;
+  border: solid 2px; 
+  background-color: aliceblue;
+  left: 30px;
+  text-align: center;
+}
+
+
+.nav-lists {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 70px;
 }
 
 .contact-button {
@@ -46,52 +39,21 @@ ul,li {
   background-color: white;
 }
 
-.navbar {
-  padding: 20px;
-  height: 70px;
-  width: 15%;
-  border: solid 2px; 
-  background-color: aliceblue;
-  left: 30px;
+.open{
   text-align: center;
 }
 
-.nav-lists {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  position: absolute;
-  top: 70px;
-}
 
-/* フッター */
-footer {
-  height: 50px;
-  background-color: #f0f0f0;
-  text-align: center;
-  color: gray;
-}
+/* body */
 
-#pagetop {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-}
 
-#pagetop a {
-  display: block;
-  background-color: black;
-  color: white;
-  width: 50px;
-  padding: 10px 5px;
-  text-align: center;
-}
 
-#pagetop a:hover {
-  background-color: var(--link-color);
-}
+/* .wapper{ */
+	/* margin:0 auto; */
+	/* max-width: 350px; */
 
-/* pages */
-/* index内 */
+/* } */
+
 .main{
   display: block;
   margin: 0 auto;
@@ -113,9 +75,7 @@ footer {
   width: 100%;
  }
 
-.open{
-  text-align: center;
-}
+
 
 .header-box {
 	display: flex;
@@ -142,6 +102,11 @@ footer {
   justify-content: center;
 }
 
+.instagram-center {
+	margin:0 auto;
+	max-width: 350px;
+}
+
 .instagram-media{
   display: flex;
   justify-content: center;
@@ -160,8 +125,8 @@ footer {
 }
 
 .summary{
-  text-align: left;
-  padding: 0px 300px 30px 300px;
+  text-align: center;
+  padding: 0px 150px 30px 150px;
 }
 
 
@@ -172,23 +137,41 @@ footer {
   padding: 50px;
 } */
 
+.access-title{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .access{
   display: block;
   margin: 0 auto;
 
 }
+
+.access-message{
+  display: flex;
+}
+
 .access-image{
-height: 70vh;
-/* width: 100%; */
-max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 50vh;
+  /* width: 100%; */
+  max-width: 100%;
 }
 
 .access-message{
- display: block;
- float: right;
- text-align: center;
+ /* float: right; */
  width: 40%;
 }
+
+.google-map{
+  display: block;
+  margin: 0 auto;
+	max-width: 350px;
+}
+
 
 /* attention内 */
 .attention-message{
@@ -268,4 +251,55 @@ max-width: 100%;
 /* //コンテンツの通常状態 */
 .tabpanel {
   display: none;
+}
+
+
+
+
+/* フッター */
+footer {
+  height: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+  color: gray;
+}
+
+#pagetop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+#pagetop a {
+  display: block;
+  background-color: black;
+  color: white;
+  width: 50px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+#pagetop a:hover {
+  background-color: var(--link-color);
+}
+
+
+@media screen and (min-width:1024px){
+  .contents {
+    display: flex;
+    width:1200px;
+    font-size:18px;
+  }
+}
+/* 以下は画面サイズが768px以下になったら適応されます */
+@media screen and (max-width:768px){
+  .contents {
+    width:100%;
+  }
+}
+/* 以下は画面サイズが768px〜1024pxまでのあいだに適応されます */
+@media screen and (min-width:768px) and (max-width:1024px){
+  .contents {
+    display: flex;
+  }
 }
