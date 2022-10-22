@@ -12,10 +12,6 @@
 
 
       <div class="top">
-        <div class="header-box">
-        <%=link_to"お問合わせ",form_path,class: "contact-button"%>
-        </div> 
-
         <div class="bg-image">
           <%= image_tag 'kawakawa-gaikan.jpeg',class:"top-image"%>
         </div>
@@ -62,10 +58,10 @@
          <div class="access-layout">    
           <div class="access-img">
             <%= image_tag "kawakawa-gaikan0.jpeg", class:"access-image" %> 
-            <div class="google-map">
+          <div class="google-map">
               <iframe class= map, src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.2406159942852!2d133.78707241527957!3d34.24240338055467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35517d8a8509d933%3A0xa1ce1c4c9e7b55b7!2z5bed5bed44GG44Gp44KT!5e0!3m2!1sja!2sjp!4v1664271492717!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          </div>
+          </div> 
             
           
           <div class="access-message">
@@ -89,3 +85,132 @@
     <p>Copyright(C) 川川うどん ALL RIGHTS RESERVED.</p>
   </footer>
 </body>
+
+
+
+
+
+
+<%# タブで作成、サンプル %>
+
+ <div class="tabs">
+    <div role="tablist" aria-label="Sample Tabs"class="tablist">
+      <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+            川川うどんについて
+          </button>
+      <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+            当店の初めてのお客様へ
+          </button>
+      <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+            メニュー
+          </button>
+                <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" tabindex="-1">
+            お店のご案内
+          </button>
+      <button role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" tabindex="-1">
+            お問い合わせ
+          </button>
+    </div>
+
+
+    <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" hidden>
+     <section id="1">
+      <div class="summary-title">
+          <h2>川川うどんについて</span></h2>
+      </div> 
+          <div class = summary>
+            <h4><p>お客様にも店名を不思議がられます。本当に大した意味はなく、父方の名字が川田で母方の名字が柳川ですので、一文字ずつ取って「川川うどん」としました(笑)。
+
+            お客様からも聞かれますが、深い意味はないんですよ。弟と私で二人三脚でやっています。</p>
+
+            <p>当店のうどんは、強いコシとか弾力とは真逆の細麺だと思います。うどんづくりの工程で讃岐うどん特有の「踏み」作業はしていません。手で鍛えるのみにとどめて、熟成時間を1日かけるようにしています。
+
+            なんといっても、香川県はうどん激戦区でレベルも高い。その中で個性を打ち出していかなければいけませんから。
+
+            オープン当初は、どちらかと言えばオーソドックスなうどんを作っておりました。自分の中で色々と考えましたが…最後は自分が一番好きな現在の細麺に決めました。</p>
+
+            <p>当初は小麦粉もASWで安定感のあるうどんを…と考えていました。</p>
+
+            <p>しかし、自分の好きなもちもちとした加水率高めの熟成麵をつくるには国産小麦の方が良かったので、何パターンも試しながら試行錯誤の連続で作りました。それ以降は季節や材料の状態で微調整はしていますが、ほぼ変えていません。</p>
+
+            自分が麺を中心に仕込んで、弟が創作系メニューを担当しています。当店はロケーションは昔の讃岐うどん店、店内はカフェのような雰囲気の店づくりとしています。こうすることで色々な層のお客様に来て頂けるのではないかと思いました。時間もお金もかかりましたね(笑)。
+
+            そのようなコンセプトにそぐうメニューも必要ですから…弟がつくる創作系メニューはウチの生命線でもあります。</p></h4>
+          </div>
+      </section> 
+    </div>
+
+    <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+      <div class = attention-message>
+          当店は食器の返却はセルフサービスとなっております。
+          恐れ入りますが食後に返却口まで返却よろしくお願いいたします。
+          <%= image_tag "96A1EF12-B577-4D28-9BC7-50308896487C_1_105_c.jpeg", class: "attention-image" %>
+      </div>
+    </div>
+
+    <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+        <div><%= link_to "メニュー一覧はこちらから",menus_path %>
+        </div>
+    </div>
+
+
+
+
+    <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
+      <section id="2">
+       <div class="access">
+          <div class="access-title">
+            <h2>お店のご案内</span></h2>
+          </div>
+         <div class="access-layout">    
+          <div class="access-img">
+            <%= image_tag "kawakawa-gaikan0.jpeg", class:"access-image" %> 
+            <div class="google-map">
+              <iframe class= map, src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.2406159942852!2d133.78707241527957!3d34.24240338055467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35517d8a8509d933%3A0xa1ce1c4c9e7b55b7!2z5bed5bed44GG44Gp44KT!5e0!3m2!1sja!2sjp!4v1664271492717!5m2!1sja!2sjp" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+            
+          
+          <div class="access-message">
+              <h3>
+                <p>住所</p>
+                <p>〒765-0031 香川県善通寺市金蔵寺町442</p>
+                <p><a href="tel:0877-55-7247">0877-55-7247</a></p>
+                <p>営業時間</p>
+                <p>11:00～14:00 (麵がなくなり次第終了)
+                ※休みは火曜日、水曜日
+                </p>
+              </h3>
+           </div>   
+          </div>
+        </div>
+       </section> 
+    </div>
+
+
+    <div id="panel-5" role="tabpanel" tabindex="0" aria-labelledby="tab-5" hidden>
+       <form method="post" action="">
+            <table class="table full-width">
+              <tbody>
+                <tr>
+                  <th><label for="name">お名前</label></th>
+                  <td><input class="full-width" type="text" name="お名前" placeholder="名前を記入" id="exampNameInput"></td>
+                </tr>
+              <tr>
+                  <th><label for="email">メールアドレス</label></th>
+                  <td><input class="full-width" type="email" name="Email" placeholder="メールアドレスを記入" id="exampleEmailInput"></td>
+                </tr>
+                <tr>
+                  <th><label for="tel">お電話番号</label></th>
+                  <td><input class="full-width" type="tel" name="お電話番号" placeholder="お電話番号を記入" id="exampleTellInput"></td>
+                </tr>
+                <tr>
+                  <th><label for="exampleMessage">お問い合わせ内容</label></th>
+                  <td><textarea class="full-width textarea" name="お問い合わせ内容" placeholder="用件をご記入ください …" id="exampleMessage"></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+             <p class="center"><input class="button" type="submit" value="送 信"></p>
+        </form>	
+    </div>
+</div>
