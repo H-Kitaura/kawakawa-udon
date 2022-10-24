@@ -1,3 +1,17 @@
+@media screen and (max-width:768px){
+  html {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width:768px){
+  header {
+    width:100%;
+    display: flex;
+    margin-left: 70px;
+  }
+}
+
 .hidden{
   display: none;
  }
@@ -13,6 +27,13 @@
   color: #333;
   /* background-color: white; */
 }
+
+@media screen and (max-width:768px){
+  .title {
+    min-width: 100%;
+  }
+}
+
 
 /* .navbar {
   height: 10%;
@@ -60,8 +81,14 @@
   background-color: aliceblue;
   margin-left: 40px;
   width: 10%;
-
 }
+
+@media screen and (max-width:768px){
+  .nav-title {
+    min-width: 100%;
+  }
+}
+
 
 .nav-lists {
   width: 200px;
@@ -165,7 +192,13 @@
   text-align: center;
   padding: 30px 250px 30px 250px;
 }
-
+@media screen and (max-width:768px){
+  .summary {
+     width:100%;
+     display: flex;
+     padding: 5px;
+   }
+ }
 
 
 /* アクセス内 */
@@ -173,6 +206,14 @@
   display: block;
   padding: 50px;
 } */
+
+@media screen and (max-width:768px){
+  .access-layout {
+    width:100%;
+  }
+}
+
+
 
 .access-title{
   text-align: center;

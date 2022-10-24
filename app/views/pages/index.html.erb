@@ -1,6 +1,6 @@
 <body>
 
-
+ <div class="wapper">
     <div class="log-in">
       <% if user_signed_in? && current_user.id %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>  
@@ -78,7 +78,7 @@
           </div>
         </div>
     </section> 
-
+ </div>
 
   <footer>
     <p id="pagetop"><a href="#">TOP</a></p>
