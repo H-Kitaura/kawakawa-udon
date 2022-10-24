@@ -188,10 +188,8 @@
   border: 1px solid;
 }
 
-.summary{
-  text-align: center;
-  padding: 30px 250px 30px 250px;
-}
+/* .summary{ */
+/* } */
 @media screen and (max-width:768px){
   .summary {
      width:100%;
@@ -320,7 +318,9 @@
 
 /* new内 */
 
-/* .main */
+.main{
+  display: flex;
+}
 
 /* .innner */
 
