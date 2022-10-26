@@ -1,6 +1,6 @@
 @media screen and (max-width:768px){
   html {
-    width: 350px;
+    width: 768px;
   }
 }
 
@@ -322,6 +322,11 @@
   display: flex;
 }
 
+@media screen and (max-width:768px){
+  .main {
+    display: block;
+  }
+}
 /* .innner */
 
 /* .form_wrapper */
