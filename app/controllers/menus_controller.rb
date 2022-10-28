@@ -1,7 +1,7 @@
 class MenusController < ApplicationController
   def index
     @food1 = Food.where(genre_id: 2)
-    @food1 = @food1.page(params[:page]).per(2)
+    @food1 = @food1.page(params[:page]).per(6)
     # @food2 = Food.where(genre_id: 3)
     # @food2 = @food2.page(params[:page]).per(2)
     # @food3 = Food.where(genre_id: 4)
@@ -10,12 +10,12 @@ class MenusController < ApplicationController
 
   def index2
     @food2 = Food.where(genre_id: 3)
-    @food2 = @food2.page(params[:page]).per(2)
+    @food2 = @food2.page(params[:page]).per(6)
   end
 
   def index3
     @food3 = Food.where(genre_id: 4)
-    @food3 = @food3.page(params[:page]).per(2)
+    @food3 = @food3.page(params[:page]).per(6)
   end
 
 
