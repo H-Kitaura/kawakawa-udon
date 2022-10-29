@@ -428,3 +428,16 @@ footer {
     display: flex;
   }
 }
+
+.menu-path{
+  display: flex;
+  justify-content: center; 
+  border: 1px solid;
+  font-size: 30px;
+  color: #333;
+}
+
+.button{
+  display: block;
+  margin: 0 auto;
+}
