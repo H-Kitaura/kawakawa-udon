@@ -303,16 +303,14 @@
 
 .tablist{
   padding: 20px;
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .basic-card{
   display: flex;
-  justify-content: space-around;
-
-  /* margin: auto; */
+  padding: 10px;
 }
 
 .card__img{

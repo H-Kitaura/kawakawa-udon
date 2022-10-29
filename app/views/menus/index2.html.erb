@@ -26,7 +26,7 @@
      <div class="basic-card"> 
        <%  @food2.each do |food| %>
         <ul class = "card_lists">
-            <li><%= link_to image_tag(food.image, class: :card__img ),menu_path(food.id) %></p>
+          <li><%= image_tag food.image, class: :card__img  %></p>
               <div> 商品名</div>
               <%= food.title%></p>
               <div> 値段</div>
@@ -34,6 +34,11 @@
               <div> 商品紹介</div>
               <%= food.concept%></p>
             </li>
+            <% if user_signed_in? && current_user.id %>
+              <div class="food__manage">
+              <%= link_to "編集する", edit_menu_path(food.id), class: :food__btn %>
+              <%= link_to "削除する", menu_path(food.id), method: :delete, class: :food__btn %>
+            <% end %>
         </ul>
        <% end %>
      </div>
