@@ -85,10 +85,8 @@
 
 @media screen and (max-width:768px){
   .nav-title {
-    min-width: 100%;
     height: 100px;
     width: 100px;
-    display: block;
     margin: 0 auto;  }
 }
 
@@ -107,7 +105,7 @@
 }
 
 .open{
-  text-align: center;
+  padding-left: 50px;
 }
 
 
@@ -308,10 +306,10 @@
   justify-content: space-evenly;
 }
 
-.basic-card{
+/* .basic-card{
   display: flex;
   padding: 10px;
-}
+} */
 
 .card__img{
   height: 30vh;
@@ -326,9 +324,9 @@
 
 /* new内 */
 
-.main{
+/* .main{
   display: flex;
-}
+} */
 
 @media screen and (max-width:768px){
   .main {
@@ -438,4 +436,47 @@ footer {
 .button{
   display: block;
   margin: 0 auto;
+}
+
+article {
+  width: 70%;
+}
+
+@media screen and (max-width:768px){
+  article {
+    margin: auto;
+    width: auto;
+  }
+}
+
+
+
+aside {
+  width: 25%;
+}
+
+@media screen and (max-width:768px){
+  aside {
+    margin: auto;
+    width: auto;
+  }
+}
+
+
+.main-menu{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width:768px){
+  .main-menu {
+    display: block;
+  }
+}
+
+
+.basic-card{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 4%;
 }
