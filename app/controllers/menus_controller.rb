@@ -32,10 +32,10 @@ class MenusController < ApplicationController
     end
   end
 
-  def show
-    @food = Food.find(params[:id])
+  # def show
+  #   @food = Food.find(params[:id])
 
-  end
+  # end
 
   def edit
     @food = Food.find(params[:id])
@@ -54,8 +54,8 @@ class MenusController < ApplicationController
   end
 
   def destroy
-    food = Food.find(params[:id])
-    food.destroy
+    @food = Food.find(params[:id])
+    @food.destroy
     redirect_to menus_path
   end
 

@@ -32,8 +32,8 @@
             <h4 class="card-title"><%=food.title %></h4>
             <p class="card-text"><%=food.money %></p>
                 <% if user_signed_in? && current_user.id %>
-                  <%= link_to "編集する", edit_menu_path(food.id), class: :food__btn %>
-                  <%= link_to "削除する", menu_path(food.id), method: :delete, class: :food__btn %>
+                  <%= button_to "編集する", edit_menu_path(food.id),method: :get %>
+                  <%= button_to "削除する", menu_path(food.id), method: :delete %>
                 <% end %>
           </div>
       </div>
