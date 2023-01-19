@@ -62,3 +62,6 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :food
+
+ログイン機能を実装して管理者だけが商品投稿、編集、削除機能を使えるよう実装しました。
+cssはブートストラップで実装。
