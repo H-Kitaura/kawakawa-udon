@@ -38,16 +38,16 @@
             </div>
         </div>
 
-        <%# <div class="wapper">
+        <div class="wapper text-end">
             <div class="log-in">
                 <% if user_signed_in? && current_user.id %>
-                <%# <%= button_to "ログアウト", destroy_user_session_path, method: :delete %>  
+                <%= button_to "ログアウト", destroy_user_session_path, method: :delete %>  
                 <%# <% else %>  
                 <%# <%= button_to "ログイン", user_session_path %> 
                 <%# <%= button_to "カワちゃんここで適当に登録するんやで！", new_user_registration_path %> 
-                <%# <% end %>  
-            <%# </div> %>
-        <%# <div> %> 
+                <% end %>  
+            </div>
+        <div> 
         </div>
     </header>
     <%= yield %>
