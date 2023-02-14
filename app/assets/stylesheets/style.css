@@ -202,7 +202,7 @@ a:active {
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
     padding       : 12px 12px;   /* 余白       */
-    background    : white;     /* 背景色     */
+    background-image: url('mokume.jpeg');     /* 背景色     */
     color         : black;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     transition    : .3s;         /* なめらか変化 */
@@ -211,6 +211,6 @@ a:active {
   }
   .menu-button:hover {
     box-shadow    : none;        /* カーソル時の影消去 */
-    color         : white;     /* 背景色     */
-    background    : black;     /* 文字色     */
+    color         : black;     /* 背景色     */
+    background    : white;     /* 文字色     */
   }
