@@ -1,5 +1,6 @@
 body{
-  background-color: #f0f5f5;
+  /* background-color: #f0f5f5; */
+  background-image: url('logo.jpg');
   font-family: Meiryo,Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -211,6 +212,10 @@ a:active {
   }
   .menu-button:hover {
     box-shadow    : none;        /* カーソル時の影消去 */
-    color         : black;     /* 背景色     */
-    background    : white;     /* 文字色     */
+    color         : white;     /* 背景色     */
+    background    : black;     /* 文字色     */
+  }
+
+  .title-tag {
+    background-color: #00a960;
   }
