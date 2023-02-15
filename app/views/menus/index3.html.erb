@@ -4,23 +4,22 @@
         <p>
         サイズ 小=１玉 中=２玉、大=３玉
         </p>
-      <div class="row card border-primary text-primary"">
+      <div class="row card border-dark text-primary"">
         <%= link_to "基本メニュー", menus_path,class:"col" %>  
         <%= link_to "期間限定メニュー", index2_path,class:"col" %>  
         <%= link_to "サイドメニュー", index3_path,class:"col" %>  
       </div>
-    </div>
+      <div class="row text-center bg-light m-4">
+        <h1>サイドメニュー</h1>
+      </div>
+  </div>
   </div>
 <div class="container">
   <div class="row">
         <% if user_signed_in? && current_user.id %>
-          <%= button_to "メニュー投稿",new_menu_path %>
+          <%= link_to "メニュー投稿",new_menu_path %>
         <% end %>
   </div>
-  <div class="row text-center">
-      <h1>サイドメニュー</h1>
-  </div>
-
   <div class="row">
   <% @food3.each do |food| %>
       <div class="col-md-4">
